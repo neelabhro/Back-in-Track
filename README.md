@@ -9,3 +9,9 @@ We plan on applying Digital Signal Processing for processing the signal from the
 Onset Detection on the Backing Track
 Onset Detection on the real-time input
 Manipulation of the backing track based on the processed input
+
+### For Ditty.wav:
+![](Plots/Ditty1.jpg)
+
+![](Plots/Ditty11.jpg)
+
