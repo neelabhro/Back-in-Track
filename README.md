@@ -15,3 +15,8 @@ Manipulation of the backing track based on the processed input
 
 ![](Plots/Ditty11.jpg)
 
+### For BUMMER.wav:
+![](Plots/bummer1.jpg)
+![](Plots/bummer2.jpg)
+![](Plots/bummer3.jpg)
+
