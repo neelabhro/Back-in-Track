@@ -16,8 +16,12 @@ Vocoder essentially means a voice encoder. A phase vocoder is used to perform **
 ### What is a Spectrogram ?
 The spectrums shown below are graphs of all the frequencies that are present in the sound recordings at a given time and are known as spectrograms. The darker areas are those where the frequencies have very low intensities, and the orange and yellow areas represent frequencies that have high intensities in the sound.
 
+### How does the onset detection function work ?
+The onset detection function detects the Short Time Fourier Transform(STFT) between the target and observed signal.The detection function (DF) is then low pass filtered and subjected to an adaptive median threshold.
+
 ### How is the beat period estimated ?
 The beat period, τ, is found by identifying the most salient lag l from an unbiased autocorrelation function, where lag (in DF samples) can be converted to tempo (in bpm) using the relation: tempo =60/(l∗0.0116), and 11.6ms is the resolution of the DF.
+It is then passed through a comb filter which is implemented by adding a delayed version of the signal to itself, causing constructive and destructive interference.
 
 ### What is a Periodogram ?
 In signal processing, a periodogram is an estimate of the spectral density of a signal.
@@ -40,3 +44,5 @@ In signal processing, a periodogram is an estimate of the spectral density of a 
 ![](Plots/bummer2.jpg)
 ![](Plots/bummer3.jpg)
 
+### References
+Beat tracking with a two state model [music applications] (IEEE https://ieeexplore.ieee.org/document/1415691 )
