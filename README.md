@@ -16,6 +16,9 @@ Vocoder essentially means a voice encoder. A phase vocoder is used to perform **
 ### What is a Spectrogram ?
 The spectrums shown below are graphs of all the frequencies that are present in the sound recordings at a given time and are known as spectrograms. The darker areas are those where the frequencies have very low intensities, and the orange and yellow areas represent frequencies that have high intensities in the sound.
 
+### How is the beat period estimated ?
+The beat period, τ, is found by identifying the most salient lag l from an unbiased autocorrelation function, where lag (in DF samples) can be converted to tempo (in bpm) using the relation: tempo =60/(l∗0.0116), and 11.6ms is the resolution of the DF.
+
 ### What is a Periodogram ?
 In signal processing, a periodogram is an estimate of the spectral density of a signal.
 
@@ -27,12 +30,12 @@ In signal processing, a periodogram is an estimate of the spectral density of a 
 5. Autocorrelation takes place.
 6. The output file is then produced.
 
-### For Ditty.wav:
+### For Audio 1:
 ![](Plots/Ditty1.jpg)
 
 ![](Plots/Ditty11.jpg)
 
-### For BUMMER.wav:
+### For Audio 2:
 ![](Plots/bummer1.jpg)
 ![](Plots/bummer2.jpg)
 ![](Plots/bummer3.jpg)
